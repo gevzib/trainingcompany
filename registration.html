@@ -24,7 +24,41 @@
         <h1 style="background-image:url(images/trainer.jpg); padding: 4em 1em; color: white; background-size: cover">Course Registration</h1> 
     </header>
     
-    <!-- insert form here -->
+    <form>
+        <fieldset>
+            <legend>Your Details</legend>
+            <ul>
+                <li><label>First Name<input type="text" autofocus required/></label></li>
+                <li><label>Surname<input type="text" /></label></li>
+                <li><label>Position / Role<input type="text" /></label></li>
+                <li><label>Email<input type="email" placeholder="you@domain.com" required /></label></li>
+                <li><label>Tel<input type="tel" placeholder="E.g.+447500000000" /></label></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Details</legend>
+            <ul>
+                <li>
+                    <label>Course Choice
+                        <select>
+                            <option>Programming with JavaScript</option>
+                            <option>Developing Web Applications using HTML5</option>
+                            <option>Developing Responsive Websites</option>
+                            <option>Leveraging the Power of jQuery</option>
+                        </select>
+                    </label>
+                </li>
+                <li><label>Number of Delegates<input type="number" value="1" /></label></li>
+                <li><label>Date<input type="date" /></label></li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submit</legend>
+            <input type="submit" />
+        </fieldset>
+    </form>
     
 </body>
 </html>
